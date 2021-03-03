@@ -1,0 +1,65 @@
+  Project2.MyForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Project2, Version=0.0.*, Culture=고정 언어(고정 국가): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Card.Card: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Collections.Generic.List`1[System.String] putCard IsByValue : Public, InitOnly
+  Methods:
+    shuffle(): PrivateScope, Public, HideBySig
+    getPutLast(): PrivateScope, Public, HideBySig
+    division(): PrivateScope, Public, HideBySig
+    pop(): PrivateScope, Public, HideBySig
+    getLength(): PrivateScope, Public, HideBySig
+    checkJack(String): PrivateScope, Public, HideBySig
+    checkQueen(String): PrivateScope, Public, HideBySig
+    checkKing(String): PrivateScope, Public, HideBySig
+Class Card.Player: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Card.Card): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 attack : Public
+  Methods:
+    getLength(): PrivateScope, Public, HideBySig
+    getCard(Int32): PrivateScope, Public, HideBySig
+    put(String): PrivateScope, Public, HideBySig
+    take(): PrivateScope, Public, HideBySig
+    findCard(String): PrivateScope, Public, HideBySig
+    checkAttack(String): PrivateScope, Public, HideBySig
+    isAttack(String): PrivateScope, Public, HideBySig
+Class Card.Person: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Card.Player
+    Void .ctor(Card.Card): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    put(String, Int32): PrivateScope, Public, HideBySig
+    take(): PrivateScope, Public, HideBySig
+Class Card.Computer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Card.Player
+    Void .ctor(Card.Card): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 lastIndex : Public
+  Methods:
+    put(String): PrivateScope, Public, HideBySig
+    take(): PrivateScope, Public, HideBySig
+    find_card(Int32): PrivateScope, Public, HideBySig
+Class Project2.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    MarshalString(String, basic_string<char\,std::char_traits<char>\,std::allocator<char> >* IsImplicitlyDereferenced): PrivateScope, Public, HideBySig
+    Delay(Int32): PrivateScope, Public, Static, HideBySig
